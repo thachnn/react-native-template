@@ -1,9 +1,4 @@
 # Xcode
-!**/*.xcodeproj
-!**/*.pbxproj
-!**/*.xcworkspacedata
-!**/*.xcsettings
-!**/*.xcscheme
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -24,22 +19,6 @@ project.xcworkspace
 
 # Gradle
 /build/
-/packages/react-native-gradle-plugin/build/
-/packages/rn-tester/build
-/packages/rn-tester/android/app/.cxx/
-/packages/rn-tester/android/app/build/
-/packages/rn-tester/android/app/gradle/
-/packages/rn-tester/android/app/gradlew
-/packages/rn-tester/android/app/gradlew.bat
-/ReactAndroid/build/
-/ReactAndroid/.cxx/
-/ReactAndroid/gradle/
-/ReactAndroid/gradlew
-/ReactAndroid/gradlew.bat
-/ReactAndroid/external-artifacts/build/
-/ReactAndroid/external-artifacts/artifacts/
-/ReactAndroid/hermes-engine/build/
-/ReactAndroid/hermes-engine/.cxx/
 /template/android/app/build/
 /template/android/build/
 
@@ -48,8 +27,6 @@ project.xcworkspace
 buck-out
 /.lsp.buckd
 /.lsp-buck-out
-/ReactAndroid/src/main/jni/prebuilt/lib/
-/ReactAndroid/src/main/gen
 
 # Android Studio
 .project
@@ -60,15 +37,13 @@ buck-out
 .watchmanconfig
 
 # Android
-.idea
-.gradle
+.idea/
+.gradle/
 local.properties
 *.iml
-/android/*
-!/android/README.md
 
 # Node
-node_modules
+node_modules/
 *.log
 .nvm
 package-lock.json
@@ -77,24 +52,13 @@ package-lock.json
 .DS_Store
 
 # Test generated files
-/ReactAndroid/src/androidTest/assets/AndroidTestBundle.js
 *.js.meta
 
-/coverage
+coverage/
 /third-party
 
 # Root dir shouldn't have Xcode project
 /*.xcodeproj
-
-# ReactCommon subdir shouldn't have Xcode project
-/ReactCommon/**/*.xcodeproj
-
-# Libs that shouldn't have Xcode project
-/Libraries/FBLazyVector/**/*.xcodeproj
-/Libraries/RCTRequired/**/*.xcodeproj
-/React/CoreModules/**/*.xcodeproj
-/React/FBReactNativeSpec/**/*.xcodeproj
-/packages/react-native-codegen/**/*.xcodeproj
 
 # Ruby Gems (Bundler)
 /vendor
@@ -104,30 +68,10 @@ package-lock.json
 /template/ios/build/
 /template/ios/Pods/
 /template/ios/Podfile.lock
-/packages/rn-tester/Gemfile.lock
-
-# Ignore RNTester specific Pods, but keep the __offline_mirrors__ here.
-/packages/rn-tester/Pods/*
-!/packages/rn-tester/Pods/__offline_mirrors_hermes__
-!/packages/rn-tester/Pods/__offline_mirrors_jsc__
-
-# react-native-codegen
-/React/FBReactNativeSpec/FBReactNativeSpec
-/packages/react-native-codegen/lib
-/packages/react-native-codegen/tmp/
-/ReactCommon/react/renderer/components/rncore/
-/packages/rn-tester/NativeModuleExample/ScreenshotManagerSpec*
-
-
-# Additional SDKs
-/sdks/download
-/sdks/hermes
-/sdks/hermesc
-/sdks/hermes-engine/build_host_hermesc
 
 # Visual studio
-.vscode
-.vs
+.vscode/
+.vs/
 
 # Android memory profiler files
 *.hprof
